@@ -20,7 +20,7 @@ This program is designed for fast file transfer between two PCs (p2p socket conn
    * **2.3** If you are the recipient, enter the sender's IP address, or vice versa. ATTENTION! After entering the IP address, you must simultaneously press Enter within half a minute.
    * **2.4** After successfully completing the above steps, the sender must enter the full path to the file (not a folder; if there are many files, simply zip them).
    * **2.5** The recipient, in turn, must wait for the file to be sent and enter "y" if they want to receive it.
-3. Wait for the file to be sent, and you're done! The file has been saved to your default "C:/users/user name/Downloads" folder.
+3. Wait for the file to be sent, and you're done! The file has been saved to your default "C:/users/user_name/Downloads" folder.
 
 ## For developers
-The program is also suitable for study and modification, and can also serve as a base for a similar program. The program was compiled using `pyinstaller --clean --onefile --icon=src/my_logo.ico p2p_file-share_RU.py`. Initially, I wanted to use the "aiortc" and "paho-mqtt" libraries, but I got confused and forgot about them. If you want to use them, open a console in the source code folder and type: `pip install -r additionally.txt`.
+The program is also suitable for study and modification, and can also serve as a base for a similar program. The program was compiled using `pyinstaller --clean --onefile --icon=src/my_logo.ico p2p_file-share_EN.py`. Initially, I wanted to use the "aiortc" and "paho-mqtt" libraries, but I got confused and forgot about them. If you want to use them, open a console in the source code folder and type: `pip install -r additionally.txt`.
