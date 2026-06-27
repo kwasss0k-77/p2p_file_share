@@ -1,16 +1,27 @@
+<p align="center">
+  <img src="src/my_logo.png" alt="логотип" width="200">
+</p>
+
 # p2p file share
-## Instruction
-### Hey-yo! First, download the program from the releases onto the computers you need (2). Then:
-1. Check the IP addresses of your PCs. To do this, go to:
-nordvpn.com/ru/what-is-my-ip/
-www.myip.com/
-whatismyipaddress.com/
-2. Run the file on both computers:
-  2.1 Enter the port on both PCs (leave it blank and press Enter if you don't know or are unsure)
-  2.2 Select role: 1 or 2
-  2.3 If you are the recipient, enter the sender's IP address, or vice versa. ATTENTION! After entering the IP address, you must simultaneously press Enter within half a minute.
-  2.4 After successfully completing the above steps, the sender must enter the full path to the file (not a folder; if there are many files, simply zip them).
-  2.5 The recipient, in turn, must wait for the file to be sent and enter "y" if they want to receive it.
-3. Wait for the file to be sent, and you're done! The file has been saved to your default Downloads folder.
-## History of creation
-### The other day, I needed to share my program with a friend, but since the device I was creating the program on didn't have any messengers, I came up with the idea of ​​making a simple, lightweight program that could easily share files between two PCs, even those in different countries. Here it is 🎉🎉
+
+## Что это за программа?
+Меня никто не просил, но я сделал. Это программа для быстрой, требующей разве что наличие интернета, передачи файлов между двумя ПК (p2p соеденение сокетами). Это программа подходит для использования в регионах с ограниченным интернетом или для людей, без мессенджеров (или незнающий как делится файлами с другими юзерами). Или если например заблокировали телеграм, ватсап, а поделится важной информацией нужно.
+
+## Инструкция
+
+### Итак, сначала скачайте программу из релизов на двое нужных вам ПК. Затем:
+1. Узнайте ваши адреса. Для этого можно зайти на сайты (без ВПН желательно):
+   * https://2ip.ru/
+   * https://ip.nic.ru/
+   * https://www.reg.ru/web-tools/myip
+   * https://www.myip.com/
+2. Запустите файл на обоих компьютерах:
+   * **2.1** Введите порт на обоих ПК (оставьте пустым и нажмите Enter если незнаете/сомневаетесь)
+   * **2.2** Выберите роль: 1 или 2
+   * **2.3** Если вы получатель, вводите айпи отправителя и наоборот. ВНИМАНИЕ! После ввода IP вам нужно РАЗОМ, в пределах полминуты, РАЗОМ нажать enter.
+   * **2.4** После успешного выполнения действий выше, отправитель должен указать полный адрес к файлу без кавычек (не к папке, а если файлов много просто сделайте из них .зип архив).
+   * **2.5** Получатель в свою очередь должен дождаться отправки файла и ввести английскую "y" если он хочет получить его.
+3. Ждите отправку файла и готово! Файл сохранился в стандартную папку "C:/users/Имя пользователя/Загрузки".
+
+## Для разработчиков
+Программа также подходит для изучения и доработок, и также может выступать как база для похожей программы. Программа была скомпилирована используя `pyinstaller --clean --onefile --icon=src/my_logo.ico p2p_file-share_RU.py`. Изначально я хотел использовать библиотеки "aiortc" и "paho-mqtt", но я запутался с ними и забил ¯\\\_(ツ)\_/¯. Если вы хотите использовать их, то откройте консоль в папке с исходным кодом и напишите: `pip install -r additionally.txt`.
